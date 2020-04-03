@@ -7,8 +7,8 @@ var btnSnack1 = document.getElementById('startSnack1');
 btnSnack1.addEventListener('click',
   function () {
 
-    var parola1 = document.getElementById('addParola1').value;
-    var parola2 = document.getElementById('addParola2').value;
+    var parola1 = document.getElementById('addParola1').value.trim();
+    var parola2 = document.getElementById('addParola2').value.trim();
 
       if ( parola1.length > parola2.length ) {
         parolaLunga = 'La parola più lunga è ' + parola1;
