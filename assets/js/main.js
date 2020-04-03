@@ -111,3 +111,18 @@ btnSnack3.addEventListener('click',
       console.log(lista);
   }
 )
+
+            // >>>>>>>>> ESERCIZIO SENZA ADDEVEVENTLISTER  <<<<<<<<<<<<
+            // var nomi = ['Michele', 'Fabio', 'Roberto'];
+            //
+            // var cognomi = ['Forghieri', 'Papagni', 'Marazzini'];
+            //
+            // var lista = [];
+            //
+            // for ( var i = 0; i < 5; i++) {
+            //
+            //   lista.push(nomi[Math.floor(Math.random() * nomi.length)] + ' ' + cognomi[Math.floor(Math.random() * cognomi.length)]);
+            //
+            // }
+            //
+            //   console.log(lista);
