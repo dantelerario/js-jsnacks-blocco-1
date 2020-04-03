@@ -126,3 +126,15 @@ btnSnack3.addEventListener('click',
             // }
             //
             //   console.log(lista);
+
+
+// JSnack Bonus (non visto insieme e quindi assolutamente facoltativo)
+// Crea un array di numeri interi, ad esempio (1, 4, 2, 15, 120, 17, 3) e fai la somma di tutti gli elementi che sono in posizione dispari. Prova prima senza funzione e poi con funzione.
+// 
+// var numInt = [1, 4, 2, 15, 120, 17, 3];
+// var sum = '';
+//
+// if (numInt[i] % 2 != 0) {
+//     sum = sum + numInt[i];
+//     console.log(sum) + ('risultato');
+// }
