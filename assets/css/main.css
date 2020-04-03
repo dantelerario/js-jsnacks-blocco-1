@@ -72,6 +72,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   word-wrap: break-word;
   background: rgba(51, 71, 91, 0.7);
   margin: 20px;
