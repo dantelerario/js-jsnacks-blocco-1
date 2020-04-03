@@ -91,3 +91,23 @@ btnSnack2.addEventListener('click',
 
 
 // Snack 3: Generatore di “nomi cognomi” casuali: prendendo una lista di nomi (‘Michele’, ‘Fabio’, ‘Roberto’) e una lista di cognomi (‘Forghieri’, ‘Papagni’, ‘Marazzini’), Gatsby vuole generare una falsa lista di 5 invitati.
+
+var btnSnack3 = document.getElementById('startSnack3');
+
+btnSnack3.addEventListener('click',
+  function() {
+    var nomi = ['Michele', 'Fabio', 'Roberto'];
+
+    var cognomi = ['Forghieri', 'Papagni', 'Marazzini'];
+
+    var lista = [];
+
+    for ( var i = 0; i < 5; i++) {
+
+      lista.push(nomi[Math.floor(Math.random() * nomi.length)] + ' ' + cognomi[Math.floor(Math.random() * cognomi.length)]);
+
+    }
+      document.getElementById('risultatoSnack3').innerHTML = lista;
+      console.log(lista);
+  }
+)
