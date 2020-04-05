@@ -131,16 +131,56 @@ btnSnack3.addEventListener('click',
 // JSnack Bonus (non visto insieme e quindi assolutamente facoltativo)
 // Crea un array di numeri interi, ad esempio (1, 4, 2, 15, 120, 17, 3) e fai la somma di tutti gli elementi che sono in posizione dispari. Prova prima senza funzione e poi con funzione.
 
-// 
-// var numInt = [];
-// for (var ix = 0; ix < 7; ix++) {
-//   numInt.push(parseInt( prompt('Inserisci 7 numeri')));
-// }
-// var sum = 0;
-// for (var i = 1; i < numInt.length; i += 2) {
-//    sum += numInt[i];
-//    console.log(numInt[i] + ' numero che somma');
-//    console.log(sum + ' somma parziale');
-//
-// }
-// console.log(sum);
+            // >>>>>>>>> ESERCIZIO SENZA ADDEVEVENTLISTER  <<<<<<<<<<<<
+            //
+            // var numInt = [];
+            // for (var ix = 0; ix < 7; ix++) {
+            //   numInt.push(parseInt( prompt('Inserisci 7 numeri')));
+            // }
+            // var sum = 0;
+            // for (var i = 1; i < numInt.length; i += 2) {
+            //    sum += numInt[i];
+            //    console.log(numInt[i] + ' numero che somma');
+            //    console.log(sum + ' somma parziale');
+            //
+            // }
+            // console.log(sum);
+
+var btnSnackBonus = document.getElementById('startSnackBonus');
+
+var btnArray = document.getElementById('btnArray');
+
+// btnArray.addEventListener('click',
+//   function() {
+//     var arrayLength = parseInt( prompt('Quanti numeri vuoi inserire nell\'array?'))
+//     document.getElementById('array').innerHTML = parseInt(arrayLength);
+//     console.log(arrayLength);
+//   }
+// )
+
+btnSnackBonus.addEventListener('click',
+  function() {
+    var numInt = [];
+
+    // var arrayEl = document.getElementById('array');
+    // console.log(arrayEl);
+    // var arrayNum = parseInt(arrayEl);
+    // console.log(arrayNum);
+
+    for (var ix = 0; ix < 7; ix++) {
+      numInt.push(parseInt( prompt('Inserisci 7 numeri')));
+    }
+    var sumOdd = 0;
+    for (var i = 1; i < numInt.length; i += 2) {
+       sumOdd += numInt[i];
+    }
+    var sumEven = 0;
+    for (var i = 0; i < numInt.length; i += 2) {
+       sumEven += numInt[i];
+    }
+
+    document.getElementById('risultatoSnackBonusOdd').innerHTML = 'Somma dei numeri in posizione dispari: ' + sumOdd;
+    document.getElementById('risultatoSnackBonusEven').innerHTML = 'Somma dei numeri in posizione pari: ' + sumEven;
+
+  }
+)
