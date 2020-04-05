@@ -168,7 +168,9 @@ btnSnackBonus.addEventListener('click',
     // console.log(arrayNum);
 
     for (var ix = 0; ix < 7; ix++) {
+
       numInt.push(parseInt( prompt('Inserisci 7 numeri')));
+      
     }
     var sumOdd = 0;
     for (var i = 1; i < numInt.length; i += 2) {
