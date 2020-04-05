@@ -58,8 +58,15 @@ body {
 }
 
 /* CONTENT */
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
 .wrapper {
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
